@@ -9,8 +9,8 @@
   require 'talks'
   require 'formatador'
   require 'lita-ascii-art'
-  Bundler.require
   require 'bundler/setup'
+  Bundler.require(:default)
 
   # "Class"
   #----------#
