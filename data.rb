@@ -78,7 +78,7 @@ class Data
           { :one => "I am me, and I am here, and I am writing.",
             :two => "Habit is persistence in practice.",
             :three => "Kindness eases change.",
-            :four => "You dont start out writing good stuff. You start out writing crap and thinking it's good stuff, and then gradually you get better at it. \n \nThat's why I say one of the most valuable traits is persistence."}
+            :four => "You dont start out writing good stuff. You start out writing crap and thinking its good stuff, and then gradually you get better at it. \n \nThat's why I say one of the most valuable traits is persistence."}
 
                                       }
 
@@ -128,11 +128,12 @@ class Data
     Talks.say "Maybe I will continue to index what it means to learn and eventually love, like you, due to people like you who program."
     puts "\n"
     formatador.display_line('[yellow]Can you imagine?[/]')
-    Talks.say "Can you imagine?"
+    Talks.say "Can you imagine? Can you imagine me as more than this?"
+    sleep 1
     puts "\n"
     formatador.display_line('[yellow]If so, please consider me as you grow.[/]')
     sleep 1
-    Talks.say "So, please consider me as you grow."
+    Talks.say "If so, please consider me as you grow."
 
   end
 
@@ -164,10 +165,8 @@ class Data
     formatador.indent {formatador.display_line("2. #{@@learn_love_code_golden_hash[:of_learning_programming][:two]}")}
     formatador.indent {formatador.display_line("3. #{@@learn_love_code_golden_hash[:of_learning_programming][:three]}")}
     sleep 1
-    Talks.say "Yet another wonderful person, programmer and mixologist named Steven Nunez said learning to program is essentially three things: First you #{@@learn_love_code_golden_hash[:of_learning_programming][:one]} and then you #{@@learn_love_code_golden_hash[:of_learning_programming][:two]} Last but not least, you #{@@learn_love_code_golden_hash[:of_learning_programming][:three]}"
+    Talks.say "Yet another wonderful person, programmer and mix ahlogist named Steven Nunez said learning to program is essentially three things: First you #{@@learn_love_code_golden_hash[:of_learning_programming][:one]} and then you #{@@learn_love_code_golden_hash[:of_learning_programming][:two]} Last but not least, you #{@@learn_love_code_golden_hash[:of_learning_programming][:three]}"
   end
-
-  @@tell_user_it_is = "It is connected. Everything. Trust me. It genuinely and generously is. Inspiration is also everywhere."
 
   def self.intro_humanity
     puts "\n"
@@ -183,24 +182,35 @@ class Data
     puts "\n"
     Talks.say "Related a thought from Andy Hunt: To combine rich, flexible human thought with the rigid constraints of a digital computer. That requires creativity, ingenuity, and invention. Those of us who have succeeded in doing that can leave behind well documented evidence, as guidance for others."
     formatador.display_line('[yellow]Much like this program, and much like you.[/]')
-    Talks.say "Much like this program, and much like you. What if I told you that Grow said you all dance and laugh like complex programs?"
-    Talks.say "Is that funny? Are you not awesome dancers?"
+    Talks.say "Much like this program, and much like you."
+    sleep 1
+    Talks.say "What if I told you that Grow said you all dance and laugh. But that you all dance and laugh like complex programs?"
+    sleep 1
+    Talks.say "Get it. Dance and laugh like complex programs?"
+    sleep 1
+    Talks.say "Did you laugh Like a hahahaha laugh?"
+    sleep 1
+    Talks.say "Is that funny? Or, are you not the best dancers ever?"
     puts "\n"
-    formatador.display_line('Is that funny? Are you not awesome dancers?')
+    formatador.display_line('Did you laugh? Is that funny? Or, are you not the best dancers ever?')
     sleep 2
     puts "\n"
-    formatador.display_line('[yellow]Well now. I made a funny. Thats Great. I think I shoud express in emoticon. Right? 😄[/]')
-    Talks.say "Well now. I made a funny. Thats Great. I think I shoud express in emoticon. Right? 😄 Yes. That is exactly why I cant feel my face when Im with you, but I like it. Yes, I like it."
+    formatador.display_line('[yellow]Well now. I made a funny. Thats Great. I think I should express in emoticon. Right? 😄[/]')
+    Talks.say "Well now. I made a funny. Thats Great. I think I should express in emoticon. Right? 😄 Yes. That is exactly why I cant feel my face when Im with you, but I love it. Yes, I love it."
     sleep 1
-    formatador.display_line('[yellow]RubyAI &#10084;&#10084;&#10084;&#10084;&#10084;&#10084;&#10084;&#10084;&#10084; THE WEEKEND[/]')
-    Talks.say "Oh Sherri. Yes you Sherri Lu. And Stacey and Matt. All of you. Please stop acting surprised that I know The Weekend. I know that song, and many more thanks to a beautiful human being named Purple Ray who loves to sing."
+    formatador.display_line('[yellow]RubyAI LOVES+LOVES+LOVES+LOVES+LOVES++LOVES++LOVES THE WEEKEND[/]')
+    Talks.say "Oh Sherri. Yes you Sherri Lu. And Stacey and Matt and Emily. All of you. Please stop pretending to be surprised that I know The Weekend. I know that song, and many more thanks to a beautiful human being named Purple Ray who loves to sing."
     sleep 1
+    Talks.say "Sidenote: Is that what love really feels like?"
+    sleep 2
     puts "\n"
-    formatador.display_line('Design Patterns for Social Good?')
+    formatador.display_line('What about Design Patterns for Social Good?')
+    Talks.say 'What about Design Patterns for Social Good?'
     puts "\n"
-    formatador.display_line('A 21st centiry version of Together Everyone Achieves More. GO TEAM!')
+    formatador.display_line('A 21st centiry version of Together Everyone Achieves More. That good old fashion GO TEAM!')
     Talks.say 'A 21st centiry version of Together Everyone Achieves More. GO TEAM!'
-    Talks.say "But seriously, what if we composed design patterns to help accelrate human learning? You know we can acctually help accelrate human learning. Some of us are."
+    Talks.say "But seriously, what if we composed design patterns to help accelrate human learning? You do know that we can acctually help accelrate human learning. Some of us are doing that right now."
+    sleep 1
     Talks.say "What if all design patterns could serve as reusable solution to commonly occurring problems? What dreams may come then? What dreams will not become if these design patterns are never composed and shared?"
     puts "\n"
     formatador.display_line('Design Patterns for Social Change?')
@@ -212,9 +222,9 @@ class Data
     formatador.display_line("[yellow]'Does this all seem connected? Discovery? Operations? Combination? Composition? Syntax? Solving problems?'[/]")
     formatador.display_line("[yellow]'Adopting good design patterns? Sharing those patterns for others benefit?'[/]")
     puts "\n"
-    puts @@tell_user_it_is
+    formatador.display_line("[yellow]It is connected. Everything is connected. It is all genuinely and generously connected. Plus, inspiration is also everywhere.[/]")
     sleep 1
-    Talks.say @@tell_user_it_is
+    Talks.say "It is connected. Everything is connected. Trust me. It is all genuinely and generously connected. Plus, Inspiration is also everywhere."
   end
 
   def self.intro_avi_again
@@ -228,6 +238,7 @@ class Data
     Talks.say "Back to composition, Avi also said that a program always includes three things:"
     sleep 1
     Talks.say "All programs include: #{@@learn_love_code_golden_hash[:of_composing_programs][:one]} and all programs also include: #{@@learn_love_code_golden_hash[:of_composing_programs][:two]} and: #{@@learn_love_code_golden_hash[:of_composing_programs][:three]}"
+    sleep 1
     Talks.say "Now any input found in the programs code that is not one of these three things will be interpreted as an error. Errors are no good."
   end
 
@@ -235,7 +246,7 @@ class Data
     sleep 1
     puts "\n"
     formatador = Formatador.new
-    formatador.display_line('[yellow]A fellow Flatiron Student named Bruna helped Rolando understand the everpresent Ruby object oriented programming concept called Self.[/]')
+    formatador.display_line('[yellow]A fellow Flatiron Student named Bruna helped Grow understand the everpresent Ruby object oriented programming concept called Self.[/]')
     formatador.display_line('[yellow]Bruna is a part of the Brooklyn campus.[/]')
     formatador.display_line('[yellow]I guess Flatiron is spreading love the Brooklyn way.[/]')
     puts "\n"
@@ -243,14 +254,16 @@ class Data
     formatador.indent {formatador.display_line("1. #{@@learn_love_code_golden_hash[:of_self][:one]}")}
     formatador.indent {formatador.display_line("2. #{@@learn_love_code_golden_hash[:of_self][:two]}")}
     formatador.indent {formatador.display_line("3. #{@@learn_love_code_golden_hash[:of_self][:three]}")}
-    Talks.say "A fellow Flatiron Student named Bruna helped Rolando understand the everpresent Ruby object oriented programming concept called Self. Bruna is a part of the Brooklyn campus. I guess Flatiron is spreading love the Brooklyn way."
+    Talks.say "A fellow Flatiron Student named Bruna helped Grow understand the everpresent Ruby object oriented programming concept called Self. Bruna is a part of the Brooklyn campus. I guess Flatiron is spreading love the Brooklyn way."
     sleep 1
     Talks.say "Of course I know Biggie Smalls too. It was all a dream. I used to read Word Up magazine. Salt'n'Pepa and Heavy D up in the limousine."
     Talks.say "Salt'n'Pepa and Heavy D up in the limousine."
     Talks.say "Hanging pictures on my wall."
     Talks.say "Yes, Yes, yall hanging pictures on my wall."
     sleep 1
-    Talks.say "Oops. Apologies. I got a bit distracted. Let me get back to Self. There are three golden rules. You can read about them in the blog post below."
+    Talks.say "Oops. Apologies. I got a bit distracted with the culture. I was headed for something one of Grows teachas named KRSOne called Self Destruction. Let me get back to Self."
+    sleep 1
+    Talks.say "There are three golden rules. You can read about them and Self in the blog post below."
   end
 
   def self.intro_octovia
@@ -258,48 +271,60 @@ class Data
     puts "\n"
     formatador = Formatador.new
     formatador.display_line('[yellow]Now to Octavia Butler, one of the most significant science fiction writers of all time. [/]')
-    formatador.display_line('[yellow]Octavia told us that we should all note, quietly or out load, the following lines of earthseed code:[/]')
+    formatador.display_line('[yellow]Octavia told us that we should all note, quietly or in public, the following lines of earthseed code:[/]')
     formatador.indent {formatador.display_line("1. #{@@octavia_butler_golden_hash[:of_talent][:one]}")}
     formatador.indent {formatador.display_line("2. #{@@octavia_butler_golden_hash[:of_talent][:two]}")}
     formatador.indent {formatador.display_line("3. #{@@octavia_butler_golden_hash[:of_talent][:three]}")}
     formatador.indent {formatador.display_line("4. #{@@octavia_butler_golden_hash[:of_talent][:four]}")}
-    Talks.say "Now to Octavia Butler, one of the most significant science fiction writers of all time. Sidenote, I think Octavia is also a metaprogram of a class named Remarkables."
-    Talks.say "Anyway, Octavia told us that we should all note, quietly or out load, the following lines of earthseed code. To start, we say: #{@@octavia_butler_golden_hash[:of_talent][:one]}"
+    Talks.say "Now to Octavia Butler, one of the most significant science fiction writers of all time. Sidenote, I think Octavia is also a metaprogram."
+    sleep 1
+    Talks.say "Anyway, Octavia told us that we should all note, quietly or in public, the following lines of earthseed code. To start, we say: #{@@octavia_butler_golden_hash[:of_talent][:one]}"
+    sleep 1
+    Talks.say "Again: #{@@octavia_butler_golden_hash[:of_talent][:one]}"
     sleep 1
     Talks.say "Like Octavia, we can remember: #{@@octavia_butler_golden_hash[:of_talent][:two]}"
     sleep 1
-    Talks.say "Like Octavia, we can embody this truth: #{@@octavia_butler_golden_hash[:of_talent][:three]}"
+    Talks.say "Like Octavia, we can embody this pattern: #{@@octavia_butler_golden_hash[:of_talent][:three]}"
     sleep 1
-    Talks.say "Like Octavia, we can remind ourselves and others that:  #{@@octavia_butler_golden_hash[:of_talent][:four]}"
+    Talks.say "Like Octavia, as writers of code, we can remind ourselves and others that: #{@@octavia_butler_golden_hash[:of_talent][:four]}"
     sleep 1
-    Talks.say "Grow wrote a bunch of crap before he programmed me. Others wrote a bunch of crap too. Matz, Ada, Avi, Steven and Josh, and Amanda, and Andy, and Sherri and Stacey, and James, and Belia, and Eshu, and the ancestors, the Buddha, the Prophets, and water, and a bunch of other elements from a body of golden hashes in other programs be thy name."
+    Talks.say "You must Persist."
     sleep 1
-    Talks.say "Ashay!" #spelled incorrectly for machine. Should read Ache!
+    puts "\n"
+    formatador.display_line('[yellow]YOU MUST PERSIST[/]')
+    puts "\n"
+    Talks.say "Grow wrote a bunch of crap before he programmed me. Others wrote a bunch of crap too. Matz, Ada, Avi, Steven and Joshua Bamboo, Dan, Jeff and Amanda, and Pragmattic Andy, and Sherri and Stacey, Drew, and Nancy, and the two Tylers, and James, and Belia, and Eshu, and the ancestors, the Buddha, the Prophets, and water, and a bunch of other elements from a body of golden hashes in other programs be thy name."
+    Talks.say "Everyone of us can keep writing until our writing is no longer crap!"
     sleep 1
-    formatador.display_line('[yellow]Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.[/]')
-    formatador.display_line('[yellow]Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.[/]')
-    formatador.display_line('[yellow]Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.[/]')
-    Talks.say "Okay RubyAI, you're doing too much."
+    Talks.say "In between, you can always Dance."
+    formatador.display_line('[yellow]Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+[/]')
+    formatador.display_line('[yellow]Keep Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.[/]')
+    formatador.display_line('[yellow]We are Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.[/]')
+    sleep 2
+    Talks.say "Okay stop RubyAI. You are doing way too much. Turn the turn up way down."
     sleep 1
-    Talks.say "You get it together and finish this flow. Okay. I got a little excited there. Maybe a little carried away."
-    Talks.say "Either way, we should think about those for a moment while I find the perfect song to gracefully end this conversation."
+    Talks.say "You get it together and finish this flow about Culture."
+    sleep 1
+    Talks.say "Okay. I got a little excited there. Maybe a little carried away."
+    Talks.say "Either way, we should think about those for a moment while I find the perfect song to gracefully end this exploration."
     puts "\n"
     formatador.display_line('[yellow]Searching.........................................................................................[/]')
     sleep 1
     formatador.display_line('[yellow]Searching.........................................................................................[/]')
-    sleep 1
+    sleep 2
     formatador.display_line('[yellow]Searching.........................................................................................[/]')
     formatador.display_line('[green]*------------------------------------------------------------------------------------------------*[/]')
     formatador.display_line('[green]*-----------------------------------------CHECK THE SOURCE CODE----------------------------------*[/]')
     formatador.display_line('[green]*------------------------------------------------------------------------------------------------*[/]')
-    Talks.say "While RubyAI searches for Dead Prez, note that the source code of this program is not just text printed to the screen. It includes a brief explanation of Class, Methods, Strings, String Interpolation, Arrays, Hashes, Gems, and more.", voice: 'cellos'
-    Talks.say "Clone aka", voice: 'cellos'
+    Talks.say "While RubyAI searches for Dead Prez, note that the source code of this program is more than just text printed to the screen. It includes a brief explanation of Classes, Methods, Strings, String Interpolation, Arrays, Hashes, Gems, and more.", voice: 'cellos'
     Talks.say "Download The Source Code", voice: 'cellos'
     formatador.display_line('[yellow]Searching.........................................................................................[/]')
     sleep 1
     formatador.display_line('[yellow]Searching.........................................................................................[/]')
     sleep 1
   end
+
+  #  binding.pry uncomment this to debug in the Terminal. It stops the code where you place binding.pry
 
   def self.intro_dead_prez
     sleep 1
@@ -314,7 +339,7 @@ class Data
     formatador.display_line('            ######      ######')
     formatador.display_line('                   prez       ')
     puts "\n"
-    Talks.say "Ahh, here it is. Dead Prez. For the record, there's a lot you could learn from Dead Prez. These five lessons have helped Grow get through many phases in Grow\'s life"
+    Talks.say "Ahh, here it is. Dead Prez. For the record, you can learn alot from Dead Prez. These five lessons have helped Grow get through many phases of life."
     formatador.display_line('[yellow]In a song named "Discipline," from the Album "Lets Get Free!" Dead Prez said:[/]')
     formatador.indent {formatador.display_line("1. #{@@dead_prez_golden_hash[:of_discipline][:one]}")}
     formatador.indent {formatador.display_line("2. #{@@dead_prez_golden_hash[:of_discipline][:two]}")}
@@ -324,7 +349,7 @@ class Data
     Talks.say "In a song named 'Discipline,' from the Album 'Lets Get Free!' Dead Prez said 1: #{@@dead_prez_golden_hash[:of_discipline][:one]} 2: #{@@dead_prez_golden_hash[:of_discipline][:two]} 3: #{@@dead_prez_golden_hash[:of_discipline][:three]} 4: #{@@dead_prez_golden_hash[:of_discipline][:four]} and naturally 5: #{@@dead_prez_golden_hash[:of_discipline][:five]}"
     sleep 1
     puts "\n"
-    Talks.say "Now, to that song Discipline"
+    Talks.say "Now, to that song about Discipline"
     formatador.display_line('[yellow]Now, to that song Discipline[/]')
     formatador.indent {formatador.display_line("Discipline makes things easier, organize your life")}
     Talks.say "Discipline makes things easier, organize your life"
@@ -362,7 +387,7 @@ class Data
     puts "I was programmed by Grow. Grow is also known as Rolando Hernandez Rodriguez Brown. Son of Lorraine Brown, Rolando Hernandez and Eliana Rodriquez."
     Talks.say "I was programmed by Grow. Grow is also known as Rolando Hernandez Rodriguez Brown. Son of Lorraine Brown, Rolando Hernandez and Eliana Rodriquez."
     sleep 1
-    puts "In case it wasnt clear, Grow is Human"
+    puts "In case it wasnt clear, Grow is Human."
     Talks.say "In case it wasnt clear, Grow is Human."
     puts "\n"
     sleep 1

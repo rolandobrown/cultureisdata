@@ -19,16 +19,15 @@ class CultureIs < Data
 
   intro_matz # Method from Data Class that calls nicely formatted text.
 
-  Talks.say "First things first. #{THANKSMATZ}" #Talks allows a description way of calling the say command.
+  Talks.say "For now. First things first. #{THANKSMATZ}" #Talks allows a description way of calling the say command.
   Talks.say "MINASWAN means: #{MINASWAN}" #String interpolation of a CONSTANT
-  sleep 1
-  Talks.say "Matz made programming easier for humans. Maybe you can make something easier for someone else. Its a great way to live." #Just a string
   sleep 1
   Talks.say "Please."
   Talks.say "Remember this motto."
   sleep 1
-
-  Talks.say "Now, let us talk about Imagination."
+  Talks.say "Matz made programming easier for humans. Maybe you can make something easier for someone else. Its a great way to live." #Just a string
+  sleep 1
+  Talks.say "Ok, let us explore Imagination."
 
   # Here, I began to exclusively create class variables from the Data class that
   # can be access here because of class inheritance.
