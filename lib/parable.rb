@@ -58,13 +58,20 @@ class Parable
     Talks.say "Everyone of us can keep writing until our writing is no longer crap!"
       Think.pause
     Talks.say "In between, you can always Dance."
-    Talks.say "You can always Dance."
+    Talks.say "You"
+      Think.pause
+    Talks.say "Can"
+      Think.pause
+    Talks.say "Always"
+      Think.pause
+    Talks.say "Dance"
+      Think.pause
     formatador.display_line('[yellow]Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.[/]')
       Think.pause
     formatador.display_line('[yellow]Keep Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+[/]')
       Think.pause
     formatador.display_line('[yellow]We are Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+[/]')
-      Think.pause(1.5)
+      Think.pause(2)
   end
 
 end
