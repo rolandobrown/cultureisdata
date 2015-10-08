@@ -5,7 +5,7 @@ A metarecits that explore Imagination, Programming, Culture, and of course Data.
 
 - [] Clone this.
 - [] $ bundle install
-- [] ruby sayhello.rb
+- [] $ ruby sayhello or $ ruby octavia
 - [] enjoy!
 
 More at: rolandobrown.github.io
