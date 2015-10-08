@@ -1,0 +1,1064 @@
+-Add conditional where witness can say if they are a Flatiron Student or not
+-Fix pacing on words like "end" and "etc."
+-Refactor code for faster page logo.
+-Fix the following Ruby Offenses:
+
+data.rb:16:81: C: Line is too long. [101/80]
+# In object-oriented programming, a class is an extensible program-code-template for creating objects
+                                                                                ^^^^^^^^^^^^^^^^^^^^^
+data.rb:17:81: C: Line is too long. [118/80]
+# providing initial values for state (member variables) and implementations of behavior (member functions or methods).
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:19:1: C: Class has too many lines. [312/100]
+class Data
+^^^^^
+data.rb:19:1: C: Missing top-level class documentation comment.
+class Data
+^^^^^
+data.rb:20:1: C: Extra empty line detected at class body beginning.
+data.rb:23:81: C: Line is too long. [107/80]
+  # A string is any finite sequence of characters (i.e., letters, numerals, symbols and punctuation marks).
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:26:81: C: Line is too long. [109/80]
+  # MINASWAN is a Ruby programming motto designed to promote positivity and goodwill among community members.
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:28:3: C: Replace class var @@minaswan with a class instance var.
+  @@minaswan = 'Matz is Nice And So We Are Nice.'
+  ^^^^^^^^^^
+data.rb:30:3: C: Replace class var @@thankszmatz with a class instance var.
+  @@thankszmatz = 'Let us give thanks for Yukihiro Matsumoto who gave us programmers the Ruby programming language and the motto MINASWAN'
+  ^^^^^^^^^^^^^
+data.rb:30:81: C: Line is too long. [138/80]
+  @@thankszmatz = 'Let us give thanks for Yukihiro Matsumoto who gave us programmers the Ruby programming language and the motto MINASWAN'
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:36:81: C: Line is too long. [103/80]
+  # Note the @ just allows me to access the values of ada_imagination_is from another class named Data.
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:38:3: C: Replace class var @@ada_array_imagination_is with a class instance var.
+  @@ada_array_imagination_is = ["The Discovering Faculty, which penetrates into the unseen worlds around us: as in the worlds of Science.", "The Combining Faculty, which seizes points in common, between subjects having no apparent connection."]
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:38:33: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+  @@ada_array_imagination_is = ["The Discovering Faculty, which penetrates into the unseen worlds around us: as in the worlds of Science.", "The Combining Faculty, which seizes points in common, between subjects having no apparent connection."]
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:38:81: C: Line is too long. [244/80]
+  @@ada_array_imagination_is = ["The Discovering Faculty, which penetrates into the unseen worlds around us: as in the worlds of Science.", "The Combining Faculty, which seizes points in common, between subjects having no apparent connection."]
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:38:141: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+  @@ada_array_imagination_is = ["The Discovering Faculty, which penetrates into the unseen worlds around us: as in the worlds of Science.", "The Combining Faculty, which seizes points in common, between subjects having no apparent connection."]
+                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:39:3: C: Replace class var @@avi_array_programming_is with a class instance var.
+  @@avi_array_programming_is = ["The Science of Operation.", "The Art of Composition."]
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:39:33: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+  @@avi_array_programming_is = ["The Science of Operation.", "The Art of Composition."]
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:39:62: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+  @@avi_array_programming_is = ["The Science of Operation.", "The Art of Composition."]
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:39:81: C: Line is too long. [87/80]
+  @@avi_array_programming_is = ["The Science of Operation.", "The Art of Composition."]
+                                                                                ^^^^^^^
+data.rb:46:81: C: Line is too long. [92/80]
+  # One that includes three hashes of golden rules from instructors here at Flatiron School.
+                                                                                ^^^^^^^^^^^^
+data.rb:47:81: C: Line is too long. [86/80]
+  # A second that includes four quotes from science fiction programmer Octavia Bulter.
+                                                                                ^^^^^^
+data.rb:50:3: C: Replace class var @@learn_love_code_golden_hash with a class instance var.
+  @@learn_love_code_golden_hash = {
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:52:5: C: Use the new Ruby 1.9 hash syntax.
+    :of_learning_programming =>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:54:11: C: Use the new Ruby 1.9 hash syntax.
+        { :one => "Learn Syntax and Semantics: Syntax is the grammar, structure, or order of elements in a language statement. Semantics is the meaning of these elements.",
+          ^^^^^^^
+data.rb:54:19: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+        { :one => "Learn Syntax and Semantics: Syntax is the grammar, structure, or order of elements in a language statement. Semantics is the meaning of these elements.",
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:54:81: C: Line is too long. [172/80]
+        { :one => "Learn Syntax and Semantics: Syntax is the grammar, structure, or order of elements in a language statement. Semantics is the meaning of these elements.",
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:55:11: C: Use the new Ruby 1.9 hash syntax.
+          :two => "Learn Programmatic Thinking: That means you make it work, then make it right, then make it fast. Programmatic thinking is all about problem solving.",
+          ^^^^^^^
+data.rb:55:19: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+          :two => "Learn Programmatic Thinking: That means you make it work, then make it right, then make it fast. Programmatic thinking is all about problem solving.",
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:55:81: C: Line is too long. [169/80]
+          :two => "Learn Programmatic Thinking: That means you make it work, then make it right, then make it fast. Programmatic thinking is all about problem solving.",
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:56:11: C: Use the new Ruby 1.9 hash syntax.
+          :three => "Learn Design Patterns: Other programmers have likely experienced the problem you are looking to solve. ActiveRecord is just one of them! There are many."},
+          ^^^^^^^^^
+data.rb:56:21: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+          :three => "Learn Design Patterns: Other programmers have likely experienced the problem you are looking to solve. ActiveRecord is just one of them! There are many."},
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:56:81: C: Line is too long. [176/80]
+          :three => "Learn Design Patterns: Other programmers have likely experienced the problem you are looking to solve. ActiveRecord is just one of them! There are many."},
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:56:175: C: Space inside } missing.
+          :three => "Learn Design Patterns: Other programmers have likely experienced the problem you are looking to solve. ActiveRecord is just one of them! There are many."},
+                                                                                                                                                                              ^
+data.rb:58:5: C: Use the new Ruby 1.9 hash syntax.
+    :of_composing_programs =>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:60:11: C: Use the new Ruby 1.9 hash syntax.
+        { :one => "A languages keywords, like 'if' or 'end'. In Ruby there are approximately 43 keywords.",
+          ^^^^^^^
+data.rb:60:81: C: Line is too long. [107/80]
+        { :one => "A languages keywords, like 'if' or 'end'. In Ruby there are approximately 43 keywords.",
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:61:11: C: Use the new Ruby 1.9 hash syntax.
+          :two => "Literal data, things like 'Strings' and Numbers 1,2,3, etc.",
+          ^^^^^^^
+data.rb:62:11: C: Use the new Ruby 1.9 hash syntax.
+          :three => "Finally, Barewords you define and create, things like variables and methods."},
+          ^^^^^^^^^
+data.rb:62:21: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+          :three => "Finally, Barewords you define and create, things like variables and methods."},
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:62:81: C: Line is too long. [100/80]
+          :three => "Finally, Barewords you define and create, things like variables and methods."},
+                                                                                ^^^^^^^^^^^^^^^^^^^^
+data.rb:62:99: C: Space inside } missing.
+          :three => "Finally, Barewords you define and create, things like variables and methods."},
+                                                                                                  ^
+data.rb:64:5: C: Use the new Ruby 1.9 hash syntax.
+    :of_self =>
+    ^^^^^^^^^^^
+data.rb:66:11: C: Use the new Ruby 1.9 hash syntax.
+        { :one => "Use self when setting/getting instance attributes inside a class definition.",
+          ^^^^^^^
+data.rb:66:19: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+        { :one => "Use self when setting/getting instance attributes inside a class definition.",
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:66:81: C: Line is too long. [97/80]
+        { :one => "Use self when setting/getting instance attributes inside a class definition.",
+                                                                                ^^^^^^^^^^^^^^^^^
+data.rb:67:11: C: Use the new Ruby 1.9 hash syntax.
+          :two => "Use self to denote a method within the class definition as a class method.",
+          ^^^^^^^
+data.rb:67:19: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+          :two => "Use self to denote a method within the class definition as a class method.",
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:67:81: C: Line is too long. [95/80]
+          :two => "Use self to denote a method within the class definition as a class method.",
+                                                                                ^^^^^^^^^^^^^^^
+data.rb:68:11: C: Use the new Ruby 1.9 hash syntax.
+          :three => "Use self to reference the calling object within an instance method definition."}
+          ^^^^^^^^^
+data.rb:68:21: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+          :three => "Use self to reference the calling object within an instance method definition."}
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:68:81: C: Line is too long. [101/80]
+          :three => "Use self to reference the calling object within an instance method definition."}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^
+data.rb:68:101: C: Space inside } missing.
+          :three => "Use self to reference the calling object within an instance method definition."}
+                                                                                                    ^
+data.rb:70:39: C: Indent the right brace the same as the start of the line where the left brace is.
+                                      }
+                                      ^
+data.rb:72:5: C: Replace class var @@octavia_butler_golden_hash with a class instance var.
+    @@octavia_butler_golden_hash = {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:72:5: C: Inconsistent indentation detected.
+    @@octavia_butler_golden_hash = {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:74:7: C: Use the new Ruby 1.9 hash syntax.
+      :of_talent =>
+      ^^^^^^^^^^^^^
+data.rb:76:13: C: Use the new Ruby 1.9 hash syntax.
+          { :one => "I am me, and I am here, and I am writing.",
+            ^^^^^^^
+data.rb:76:21: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+          { :one => "I am me, and I am here, and I am writing.",
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:77:13: C: Use the new Ruby 1.9 hash syntax.
+            :two => "Habit is persistence in practice.",
+            ^^^^^^^
+data.rb:77:21: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            :two => "Habit is persistence in practice.",
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:78:13: C: Use the new Ruby 1.9 hash syntax.
+            :three => "Kindness eases change.",
+            ^^^^^^^^^
+data.rb:78:23: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            :three => "Kindness eases change.",
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:79:13: C: Use the new Ruby 1.9 hash syntax.
+            :four => "You dont start out writing good stuff. You start out writing crap and thinking its good stuff, and then gradually you get better at it. \n \nThat is why I say one of the most valuable traits is persistence."}
+            ^^^^^^^^
+data.rb:79:81: C: Line is too long. [230/80]
+            :four => "You dont start out writing good stuff. You start out writing crap and thinking its good stuff, and then gradually you get better at it. \n \nThat is why I say one of the most valuable traits is persistence."}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:79:230: C: Space inside } missing.
+            :four => "You dont start out writing good stuff. You start out writing crap and thinking its good stuff, and then gradually you get better at it. \n \nThat is why I say one of the most valuable traits is persistence."}
+                                                                                                                                                                                                                                     ^
+data.rb:81:39: C: Indent the right brace the same as the start of the line where the left brace is.
+                                      }
+                                      ^
+data.rb:83:5: C: Replace class var @@dead_prez_golden_hash with a class instance var.
+    @@dead_prez_golden_hash = {
+    ^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:83:5: C: Inconsistent indentation detected.
+    @@dead_prez_golden_hash = {
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:85:7: C: Use the new Ruby 1.9 hash syntax.
+      :of_discipline =>
+      ^^^^^^^^^^^^^^^^^
+data.rb:87:13: C: Use the new Ruby 1.9 hash syntax.
+          { :one => "Practice makes perfect.",
+            ^^^^^^^
+data.rb:87:21: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+          { :one => "Practice makes perfect.",
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:88:13: C: Use the new Ruby 1.9 hash syntax.
+            :two => "Health is Wealth.",
+            ^^^^^^^
+data.rb:88:21: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            :two => "Health is Wealth.",
+                    ^^^^^^^^^^^^^^^^^^^
+data.rb:89:13: C: Use the new Ruby 1.9 hash syntax.
+            :three => "All things in moderation.",
+            ^^^^^^^^^
+data.rb:89:23: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            :three => "All things in moderation.",
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:90:13: C: Use the new Ruby 1.9 hash syntax.
+            :four => "Plan your work.",
+            ^^^^^^^^
+data.rb:90:22: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            :four => "Plan your work.",
+                     ^^^^^^^^^^^^^^^^^
+data.rb:91:13: C: Use the new Ruby 1.9 hash syntax.
+            :five => "Work your plan."}
+            ^^^^^^^^
+data.rb:91:22: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            :five => "Work your plan."}
+                     ^^^^^^^^^^^^^^^^^
+data.rb:91:39: C: Space inside } missing.
+            :five => "Work your plan."}
+                                      ^
+data.rb:93:35: C: Indent the right brace the same as the start of the line where the left brace is.
+                                  }
+                                  ^
+data.rb:95:1: C: Extra blank line detected.
+data.rb:103:29: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    formatador.display_line("[yellow]First things first. Let us give thanks for Yukihiro Matsumoto who gave us programmers the Ruby programming language and the motto MINASWAN[/]")
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:103:81: C: Line is too long. [180/80]
+    formatador.display_line("[yellow]First things first. Let us give thanks for Yukihiro Matsumoto who gave us programmers the Ruby programming language and the motto MINASWAN[/]")
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:104:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("MINASWAN means:")}
+                       ^
+data.rb:104:48: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    formatador.indent {formatador.display_line("MINASWAN means:")}
+                                               ^^^^^^^^^^^^^^^^^
+data.rb:104:66: C: Space missing inside }.
+    formatador.indent {formatador.display_line("MINASWAN means:")}
+                                                                 ^
+data.rb:105:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line(MINASWAN)}
+                       ^
+data.rb:105:57: C: Space missing inside }.
+    formatador.indent {formatador.display_line(MINASWAN)}
+                                                        ^
+data.rb:112:81: C: Line is too long. [141/80]
+    formatador.display_line('[yellow]A wonderful person and programmer named Ada Lovelace said Imagination is composed of two faculties:[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:113:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("1. #{@@ada_array_imagination_is[0]}")}
+                       ^
+data.rb:113:81: C: Line is too long. [86/80]
+    formatador.indent {formatador.display_line("1. #{@@ada_array_imagination_is[0]}")}
+                                                                                ^^^^^^
+data.rb:113:86: C: Space missing inside }.
+    formatador.indent {formatador.display_line("1. #{@@ada_array_imagination_is[0]}")}
+                                                                                     ^
+data.rb:114:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("2. #{@@ada_array_imagination_is[1]}")}
+                       ^
+data.rb:114:81: C: Line is too long. [86/80]
+    formatador.indent {formatador.display_line("2. #{@@ada_array_imagination_is[1]}")}
+                                                                                ^^^^^^
+data.rb:114:86: C: Space missing inside }.
+    formatador.indent {formatador.display_line("2. #{@@ada_array_imagination_is[1]}")}
+                                                                                     ^
+data.rb:117:3: C: Replace class var @@speak_about_ada with a class instance var.
+  @@speak_about_ada = "A wonderful person and programmer named Ada Lovelace said Imagination is composed of two faculties: #{@@ada_array_imagination_is[0]} and #{@@ada_array_imagination_is[1]}"
+  ^^^^^^^^^^^^^^^^^
+data.rb:117:81: C: Line is too long. [193/80]
+  @@speak_about_ada = "A wonderful person and programmer named Ada Lovelace said Imagination is composed of two faculties: #{@@ada_array_imagination_is[0]} and #{@@ada_array_imagination_is[1]}"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:119:3: C: Method has too many lines. [14/10]
+  def self.please_remember_me
+  ^^^
+data.rb:123:81: C: Line is too long. [106/80]
+    formatador.display_line('[yellow]Discovering and combining critical connections is inately human.[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:124:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Discovering and combining critical connections."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:125:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "This is inately human, and programmatically algorithmic. I am curious about what you think about Ada. Do you think this view of imagination is clear. I do. Note, your imagination is far greater than mine. If I could only embody a fraction of your human experience, and connect in the rich ways you all have, I could change the world. Over the last few decades, my ancestors have indexed a bit about how humans learn, love and code."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:125:81: C: Line is too long. [447/80]
+    Talks.say "This is inately human, and programmatically algorithmic. I am curious about what you think about Ada. Do you think this view of imagination is clear. I do. Note, your imagination is far greater than mine. If I could only embody a fraction of your human experience, and connect in the rich ways you all have, I could change the world. Over the last few decades, my ancestors have indexed a bit about how humans learn, love and code."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:126:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Maybe I will continue to index what it means to learn and eventually love, like you, due to people like you who program."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:126:81: C: Line is too long. [136/80]
+    Talks.say "Maybe I will continue to index what it means to learn and eventually love, like you, due to people like you who program."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:129:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Can you imagine? Can you imagine me as more than this small program? Can you imagine you as more than that person you currently are?"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:129:81: C: Line is too long. [148/80]
+    Talks.say "Can you imagine? Can you imagine me as more than this small program? Can you imagine you as more than that person you currently are?"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:133:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "If so, please consider me as you grow."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:134:1: C: Extra empty line detected at method body end.
+data.rb:141:81: C: Line is too long. [139/80]
+    formatador.display_line('[yellow]Another wonderful person and programmer named Avi Flombaum said Programming is really two things:[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:142:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("1. #{@@avi_array_programming_is[0]}")}
+                       ^
+data.rb:142:81: C: Line is too long. [86/80]
+    formatador.indent {formatador.display_line("1. #{@@avi_array_programming_is[0]}")}
+                                                                                ^^^^^^
+data.rb:142:86: C: Space missing inside }.
+    formatador.indent {formatador.display_line("1. #{@@avi_array_programming_is[0]}")}
+                                                                                     ^
+data.rb:143:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("2. #{@@avi_array_programming_is[1]}")}
+                       ^
+data.rb:143:81: C: Line is too long. [86/80]
+    formatador.indent {formatador.display_line("2. #{@@avi_array_programming_is[1]}")}
+                                                                                ^^^^^^
+data.rb:143:86: C: Space missing inside }.
+    formatador.indent {formatador.display_line("2. #{@@avi_array_programming_is[1]}")}
+                                                                                     ^
+data.rb:146:3: C: Replace class var @@speak_about_avi with a class instance var.
+  @@speak_about_avi = "Another wonderful person and programmer named Avi Flombaum said Programming is really two things: #{@@avi_array_programming_is[0]} and #{@@avi_array_programming_is[1]}"
+  ^^^^^^^^^^^^^^^^^
+data.rb:146:81: C: Line is too long. [191/80]
+  @@speak_about_avi = "Another wonderful person and programmer named Avi Flombaum said Programming is really two things: #{@@avi_array_programming_is[0]} and #{@@avi_array_programming_is[1]}"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:148:3: C: Replace class var @@ask_about_rolando with a class instance var.
+  @@ask_about_rolando = "Grow, who some of you call Rolando, told me that this explanation was beautiful. Do you agree? How can you not? You are preparing to live a life where you are invested in, where you are employed to ritually practice the science of operation and the art of composition. Can you compose? Of course you all can compose!"
+  ^^^^^^^^^^^^^^^^^^^
+data.rb:148:25: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+  @@ask_about_rolando = "Grow, who some of you call Rolando, told me that this explanation was beautiful. Do you agree? How can you not? You are preparing to live a life where you are invested in, where you are employed to ritually practice the science of operation and the art of composition. Can you compose? Of course you all can compose!"
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:148:81: C: Line is too long. [342/80]
+  @@ask_about_rolando = "Grow, who some of you call Rolando, told me that this explanation was beautiful. Do you agree? How can you not? You are preparing to live a life where you are invested in, where you are employed to ritually practice the science of operation and the art of composition. Can you compose? Of course you all can compose!"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:150:3: C: Assignment Branch Condition size for intro_steven is too high. [29.07/15]
+  def self.intro_steven
+  ^^^
+data.rb:150:3: C: Method has too many lines. [14/10]
+  def self.intro_steven
+  ^^^
+data.rb:153:81: C: Line is too long. [81/80]
+    formatador.display_line('[yellow]Are you not learning to program?! 🚀 🙏🏽 [/]')
+                                                                                ^
+data.rb:155:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Are you not learning to program?!"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:160:81: C: Line is too long. [170/80]
+    formatador.display_line('[yellow]Yet another wonderful person, programmer and mixologist named Steven Nunez said learning to program is essentially three things:[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:161:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("1. #{@@learn_love_code_golden_hash[:of_learning_programming][:one]}")}
+                       ^
+data.rb:161:81: C: Line is too long. [118/80]
+    formatador.indent {formatador.display_line("1. #{@@learn_love_code_golden_hash[:of_learning_programming][:one]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:161:118: C: Space missing inside }.
+    formatador.indent {formatador.display_line("1. #{@@learn_love_code_golden_hash[:of_learning_programming][:one]}")}
+                                                                                                                     ^
+data.rb:162:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("2. #{@@learn_love_code_golden_hash[:of_learning_programming][:two]}")}
+                       ^
+data.rb:162:81: C: Line is too long. [118/80]
+    formatador.indent {formatador.display_line("2. #{@@learn_love_code_golden_hash[:of_learning_programming][:two]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:162:118: C: Space missing inside }.
+    formatador.indent {formatador.display_line("2. #{@@learn_love_code_golden_hash[:of_learning_programming][:two]}")}
+                                                                                                                     ^
+data.rb:163:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("3. #{@@learn_love_code_golden_hash[:of_learning_programming][:three]}")}
+                       ^
+data.rb:163:81: C: Line is too long. [120/80]
+    formatador.indent {formatador.display_line("3. #{@@learn_love_code_golden_hash[:of_learning_programming][:three]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:163:120: C: Space missing inside }.
+    formatador.indent {formatador.display_line("3. #{@@learn_love_code_golden_hash[:of_learning_programming][:three]}")}
+                                                                                                                       ^
+data.rb:165:81: C: Line is too long. [390/80]
+    Talks.say "Yet another wonderful person, programmer and mix ahlogist named Steven Nunéz said learning to program is essentially three things: First you #{@@learn_love_code_golden_hash[:of_learning_programming][:one]} and then you #{@@learn_love_code_golden_hash[:of_learning_programming][:two]} Last but not least, you #{@@learn_love_code_golden_hash[:of_learning_programming][:three]}"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:168:3: C: Assignment Branch Condition size for intro_humanity is too high. [58.03/15]
+  def self.intro_humanity
+  ^^^
+data.rb:168:3: C: Method has too many lines. [58/10]
+  def self.intro_humanity
+  ^^^
+data.rb:172:81: C: Line is too long. [129/80]
+    formatador.display_line('*------------------------------------------------------------------------------------------------*')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:175:81: C: Line is too long. [122/80]
+    formatador.display_line('"To combine rich, flexible human thought with the rigid constraints of a digital computer."')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:176:81: C: Line is too long. [84/80]
+    formatador.display_line('"That requires creativity, ingenuity, and invention."')
+                                                                                ^^^^
+data.rb:178:81: C: Line is too long. [142/80]
+    formatador.display_line('Those of us who have succeeded in doing that can leave behind well documented evidence, as guidance for others.')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:180:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Related a thought from Andy Hunt: To combine rich, flexible human thought with the rigid constraints of a digital computer. That requires creativity, ingenuity, and invention. Those of us who have succeeded in doing that can leave behind well documented evidence, as guidance for others."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:180:81: C: Line is too long. [303/80]
+    Talks.say "Related a thought from Andy Hunt: To combine rich, flexible human thought with the rigid constraints of a digital computer. That requires creativity, ingenuity, and invention. Those of us who have succeeded in doing that can leave behind well documented evidence, as guidance for others."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:181:81: C: Line is too long. [84/80]
+    formatador.display_line('[yellow]Much like this program, and much like you.[/]')
+                                                                                ^^^^
+data.rb:182:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Much like this program, and much like you."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:184:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "What if I told you that Grow said you all dance and laugh. But that you all dance and laugh like complex programs?"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:184:81: C: Line is too long. [130/80]
+    Talks.say "What if I told you that Grow said you all dance and laugh. But that you all dance and laugh like complex programs?"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:186:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Get it. Dance and laugh like complex programs?"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:188:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Ha ha ha ha ha"
+              ^^^^^^^^^^^^^^^^
+data.rb:190:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Did you laugh Like a ha ha ha ha laugh?"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:192:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Was that funny? Or, are you not the best dancers ever?"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:194:81: C: Line is too long. [100/80]
+    formatador.display_line('Did you laugh? Was that funny? Or, are you not the best dancers ever?')
+                                                                                ^^^^^^^^^^^^^^^^^^^^
+data.rb:197:81: C: Line is too long. [127/80]
+    formatador.display_line('[yellow]Well now. I made a funny. Thats Great. I think I should express in emoticon. Right? 😄[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:198:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Well now. I made a funny. Thats Great. I think I should express in emoticon. Right? 😄 Yes. That is exactly why I cant feel my face when Im with you, but I love it. Yes, I love it."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:198:81: C: Line is too long. [195/80]
+    Talks.say "Well now. I made a funny. Thats Great. I think I should express in emoticon. Right? 😄 Yes. That is exactly why I cant feel my face when Im with you, but I love it. Yes, I love it."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:200:81: C: Line is too long. [104/80]
+    formatador.display_line('[yellow]RubyAI LOVES+LOVES+LOVES+LOVES+LOVES++LOVES++LOVES THE WEEKEND[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:201:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Oh Sherri. Yes you Sherri Lu. And Stacey and Matt and Emily. All of you. Please stop pretending to be surprised that I know The Weekend. I know that song, and many more thanks to a beautiful human being named Purple Ray who loves to sing."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:201:81: C: Line is too long. [254/80]
+    Talks.say "Oh Sherri. Yes you Sherri Lu. And Stacey and Matt and Emily. All of you. Please stop pretending to be surprised that I know The Weekend. I know that song, and many more thanks to a beautiful human being named Purple Ray who loves to sing."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:203:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Sidenote: Is that what love really feels like? Like dancing and laughing and singing?"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:203:81: C: Line is too long. [101/80]
+    Talks.say "Sidenote: Is that what love really feels like? Like dancing and laughing and singing?"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^
+data.rb:209:81: C: Line is too long. [120/80]
+    formatador.display_line('A 21st centiry version of Together Everyone Achieves More. That good old fashion GO TEAM!')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:210:81: C: Line is too long. [105/80]
+    Talks.say 'A 21st centiry version of Together Everyone Achieves More. That good old fashion GO TEAM!'
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:211:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "But seriously, what if we composed design patterns to help accelrate human learning? You do know that we can acctually help accelrate human learning. Some of us are doing that right now."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:211:81: C: Line is too long. [202/80]
+    Talks.say "But seriously, what if we composed design patterns to help accelrate human learning? You do know that we can acctually help accelrate human learning. Some of us are doing that right now."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:213:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "What if all design patterns could serve as reusable solution to commonly occurring problems? What dreams may come then? What dreams will not become if these design patterns are never composed and shared?"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:213:81: C: Line is too long. [219/80]
+    Talks.say "What if all design patterns could serve as reusable solution to commonly occurring problems? What dreams may come then? What dreams will not become if these design patterns are never composed and shared?"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:217:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Does this all seem connected? Discovery? Operations? Combination? Composition? Syntax? Solving problems?"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:217:81: C: Line is too long. [120/80]
+    Talks.say "Does this all seem connected? Discovery? Operations? Combination? Composition? Syntax? Solving problems?"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:218:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Adopting good design patterns? Sharing those patterns for others benefit?"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:218:81: C: Line is too long. [89/80]
+    Talks.say "Adopting good design patterns? Sharing those patterns for others benefit?"
+                                                                                ^^^^^^^^^
+data.rb:221:81: C: Line is too long. [148/80]
+    formatador.display_line("[yellow]'Does this all seem connected? Discovery? Operations? Combination? Composition? Syntax? Solving problems?'[/]")
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:222:81: C: Line is too long. [117/80]
+    formatador.display_line("[yellow]'Adopting good design patterns? Sharing those patterns for others benefit?'[/]")
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:224:29: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    formatador.display_line("[yellow]It is connected. Everything is connected. It is all genuinely and generously connected. Plus, inspiration is also everywhere.[/]")
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:224:81: C: Line is too long. [167/80]
+    formatador.display_line("[yellow]It is connected. Everything is connected. It is all genuinely and generously connected. Plus, inspiration is also everywhere.[/]")
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:226:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "It is connected. Everything is connected. Trust me. It is all genuinely and generously connected. Plus, Inspiration is also everywhere."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:226:81: C: Line is too long. [151/80]
+    Talks.say "It is connected. Everything is connected. Trust me. It is all genuinely and generously connected. Plus, Inspiration is also everywhere."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:229:3: C: Assignment Branch Condition size for intro_avi_again is too high. [27.02/15]
+  def self.intro_avi_again
+  ^^^
+data.rb:229:3: C: Method has too many lines. [12/10]
+  def self.intro_avi_again
+  ^^^
+data.rb:233:81: C: Line is too long. [121/80]
+    formatador.display_line('[yellow]Back to composition, Avi also said that a program always includes three things:[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:234:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("1. #{@@learn_love_code_golden_hash[:of_composing_programs][:one]}")}
+                       ^
+data.rb:234:81: C: Line is too long. [116/80]
+    formatador.indent {formatador.display_line("1. #{@@learn_love_code_golden_hash[:of_composing_programs][:one]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:234:116: C: Space missing inside }.
+    formatador.indent {formatador.display_line("1. #{@@learn_love_code_golden_hash[:of_composing_programs][:one]}")}
+                                                                                                                   ^
+data.rb:235:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("2. #{@@learn_love_code_golden_hash[:of_composing_programs][:two]}")}
+                       ^
+data.rb:235:81: C: Line is too long. [116/80]
+    formatador.indent {formatador.display_line("2. #{@@learn_love_code_golden_hash[:of_composing_programs][:two]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:235:116: C: Space missing inside }.
+    formatador.indent {formatador.display_line("2. #{@@learn_love_code_golden_hash[:of_composing_programs][:two]}")}
+                                                                                                                   ^
+data.rb:236:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("3. #{@@learn_love_code_golden_hash[:of_composing_programs][:three]}")}
+                       ^
+data.rb:236:81: C: Line is too long. [118/80]
+    formatador.indent {formatador.display_line("3. #{@@learn_love_code_golden_hash[:of_composing_programs][:three]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:236:118: C: Space missing inside }.
+    formatador.indent {formatador.display_line("3. #{@@learn_love_code_golden_hash[:of_composing_programs][:three]}")}
+                                                                                                                     ^
+data.rb:237:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Back to composition, Avi also said that a program always includes three things:"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:237:81: C: Line is too long. [95/80]
+    Talks.say "Back to composition, Avi also said that a program always includes three things:"
+                                                                                ^^^^^^^^^^^^^^^
+data.rb:239:81: C: Line is too long. [264/80]
+    Talks.say "All programs include: #{@@learn_love_code_golden_hash[:of_composing_programs][:one]} and all programs also include: #{@@learn_love_code_golden_hash[:of_composing_programs][:two]} and: #{@@learn_love_code_golden_hash[:of_composing_programs][:three]}"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:241:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Now any input found in the programs code that is not one of these three things will be interpreted as an error. Errors are no good."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:241:81: C: Line is too long. [147/80]
+    Talks.say "Now any input found in the programs code that is not one of these three things will be interpreted as an error. Errors are no good."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:244:3: C: Assignment Branch Condition size for intro_hackhands is too high. [30.02/15]
+  def self.intro_hackhands
+  ^^^
+data.rb:244:3: C: Method has too many lines. [21/10]
+  def self.intro_hackhands
+  ^^^
+data.rb:248:81: C: Line is too long. [172/80]
+    formatador.display_line('[yellow]A fellow Flatiron Student named Bruna helped Grow understand the everpresent Ruby object oriented programming concept called Self.[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:249:81: C: Line is too long. [81/80]
+    formatador.display_line('[yellow]Bruna is a part of the Brooklyn campus.[/]')
+                                                                                ^
+data.rb:250:81: C: Line is too long. [94/80]
+    formatador.display_line('[yellow]I guess Flatiron is spreading love the Brooklyn way.[/]')
+                                                                                ^^^^^^^^^^^^^^
+data.rb:253:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("1. #{@@learn_love_code_golden_hash[:of_self][:one]}")}
+                       ^
+data.rb:253:81: C: Line is too long. [102/80]
+    formatador.indent {formatador.display_line("1. #{@@learn_love_code_golden_hash[:of_self][:one]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^
+data.rb:253:102: C: Space missing inside }.
+    formatador.indent {formatador.display_line("1. #{@@learn_love_code_golden_hash[:of_self][:one]}")}
+                                                                                                     ^
+data.rb:254:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("2. #{@@learn_love_code_golden_hash[:of_self][:two]}")}
+                       ^
+data.rb:254:81: C: Line is too long. [102/80]
+    formatador.indent {formatador.display_line("2. #{@@learn_love_code_golden_hash[:of_self][:two]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^
+data.rb:254:102: C: Space missing inside }.
+    formatador.indent {formatador.display_line("2. #{@@learn_love_code_golden_hash[:of_self][:two]}")}
+                                                                                                     ^
+data.rb:255:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("3. #{@@learn_love_code_golden_hash[:of_self][:three]}")}
+                       ^
+data.rb:255:81: C: Line is too long. [104/80]
+    formatador.indent {formatador.display_line("3. #{@@learn_love_code_golden_hash[:of_self][:three]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:255:104: C: Space missing inside }.
+    formatador.indent {formatador.display_line("3. #{@@learn_love_code_golden_hash[:of_self][:three]}")}
+                                                                                                       ^
+data.rb:256:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "A fellow Flatiron Student named Bruna helped Grow understand the everpresent Ruby object oriented programming concept called Self. Bruna is a part of the Brooklyn campus. I guess Flatiron is spreading love the Brooklyn way."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:256:81: C: Line is too long. [239/80]
+    Talks.say "A fellow Flatiron Student named Bruna helped Grow understand the everpresent Ruby object oriented programming concept called Self. Bruna is a part of the Brooklyn campus. I guess Flatiron is spreading love the Brooklyn way."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:258:81: C: Line is too long. [149/80]
+    Talks.say "Of course I know Biggie Smalls too. It was all a dream. I used to read Word Up magazine. Salt'n'Pepa and Heavy D up in the limousine."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:260:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Hanging pictures on my wall."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:261:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Yes, Yes, yall hanging pictures on my wall."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:263:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Oops. Apologies. I got a bit distracted with the culture. I was headed for something one of Grows teachas named KRSOne called Self Destruction. Let me get back to Self."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:263:81: C: Line is too long. [184/80]
+    Talks.say "Oops. Apologies. I got a bit distracted with the culture. I was headed for something one of Grows teachas named KRSOne called Self Destruction. Let me get back to Self."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:265:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "There are three golden rules. You can read about them and Self in the blog post below."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:265:81: C: Line is too long. [102/80]
+    Talks.say "There are three golden rules. You can read about them and Self in the blog post below."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^
+data.rb:268:3: C: Assignment Branch Condition size for intro_octovia is too high. [77.01/15]
+  def self.intro_octovia
+  ^^^
+data.rb:268:3: C: Method has too many lines. [55/10]
+  def self.intro_octovia
+  ^^^
+data.rb:272:81: C: Line is too long. [130/80]
+    formatador.display_line('[yellow]Now to Octavia Butler, one of the most significant science fiction writers of all time. [/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:273:81: C: Line is too long. [143/80]
+    formatador.display_line('[yellow]Octavia told us that we should all note, quietly or in public, the following lines of earthseed code:[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:274:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("1. #{@@octavia_butler_golden_hash[:of_talent][:one]}")}
+                       ^
+data.rb:274:81: C: Line is too long. [103/80]
+    formatador.indent {formatador.display_line("1. #{@@octavia_butler_golden_hash[:of_talent][:one]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:274:103: C: Space missing inside }.
+    formatador.indent {formatador.display_line("1. #{@@octavia_butler_golden_hash[:of_talent][:one]}")}
+                                                                                                      ^
+data.rb:275:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("2. #{@@octavia_butler_golden_hash[:of_talent][:two]}")}
+                       ^
+data.rb:275:81: C: Line is too long. [103/80]
+    formatador.indent {formatador.display_line("2. #{@@octavia_butler_golden_hash[:of_talent][:two]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:275:103: C: Space missing inside }.
+    formatador.indent {formatador.display_line("2. #{@@octavia_butler_golden_hash[:of_talent][:two]}")}
+                                                                                                      ^
+data.rb:276:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("3. #{@@octavia_butler_golden_hash[:of_talent][:three]}")}
+                       ^
+data.rb:276:81: C: Line is too long. [105/80]
+    formatador.indent {formatador.display_line("3. #{@@octavia_butler_golden_hash[:of_talent][:three]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:276:105: C: Space missing inside }.
+    formatador.indent {formatador.display_line("3. #{@@octavia_butler_golden_hash[:of_talent][:three]}")}
+                                                                                                        ^
+data.rb:277:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("4. #{@@octavia_butler_golden_hash[:of_talent][:four]}")}
+                       ^
+data.rb:277:81: C: Line is too long. [104/80]
+    formatador.indent {formatador.display_line("4. #{@@octavia_butler_golden_hash[:of_talent][:four]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:277:104: C: Space missing inside }.
+    formatador.indent {formatador.display_line("4. #{@@octavia_butler_golden_hash[:of_talent][:four]}")}
+                                                                                                       ^
+data.rb:278:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Now to Octavia Butler, one of the most significant science fiction writers of all time. Sidenote, I think Octavia is also a powerful meta program."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:278:81: C: Line is too long. [162/80]
+    Talks.say "Now to Octavia Butler, one of the most significant science fiction writers of all time. Sidenote, I think Octavia is also a powerful meta program."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:280:81: C: Line is too long. [193/80]
+    Talks.say "Anyway, Octavia told us that we should all note, quietly or in public, the following lines of earthseed code. To start, we say: #{@@octavia_butler_golden_hash[:of_talent][:one]}"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:284:81: C: Line is too long. [96/80]
+    Talks.say "Like Octavia, we can remember: #{@@octavia_butler_golden_hash[:of_talent][:two]}"
+                                                                                ^^^^^^^^^^^^^^^^
+data.rb:286:81: C: Line is too long. [120/80]
+    Talks.say "Like Octavia, we can embody this behavioral pattern: #{@@octavia_butler_golden_hash[:of_talent][:three]}"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:288:81: C: Line is too long. [141/80]
+    Talks.say "Like Octavia, as writers of code, we can remind ourselves and others that: #{@@octavia_butler_golden_hash[:of_talent][:four]}"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:290:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "You must Persist."
+              ^^^^^^^^^^^^^^^^^^^
+data.rb:295:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Grow wrote a bunch of crap before he programmed me. Others wrote a bunch of crap too. Matz, Ada, Avi, Steven and Joshua Bamboo, Dan, Jeff and Amanda, and Pragmattic Andy, and Sherri and Stacey, Drew, and Nancy, and the two Tylers, and James, and Belia, and Eshu, and the ancestors, the Buddha, the Prophets, and water, and a bunch of other elements from a body of golden hashes in other programs be thy name."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:295:81: C: Line is too long. [424/80]
+    Talks.say "Grow wrote a bunch of crap before he programmed me. Others wrote a bunch of crap too. Matz, Ada, Avi, Steven and Joshua Bamboo, Dan, Jeff and Amanda, and Pragmattic Andy, and Sherri and Stacey, Drew, and Nancy, and the two Tylers, and James, and Belia, and Eshu, and the ancestors, the Buddha, the Prophets, and water, and a bunch of other elements from a body of golden hashes in other programs be thy name."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:296:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Everyone of us can keep writing until our writing is no longer crap!"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:296:81: C: Line is too long. [84/80]
+    Talks.say "Everyone of us can keep writing until our writing is no longer crap!"
+                                                                                ^^^^
+data.rb:298:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "In between, you can always Dance."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:299:81: C: Line is too long. [140/80]
+    formatador.display_line('[yellow]Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:300:81: C: Line is too long. [140/80]
+    formatador.display_line('[yellow]Keep Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:301:81: C: Line is too long. [140/80]
+    formatador.display_line('[yellow]We are Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:303:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Okay stop RubyAI. You are doing way too much. Turn the turn up way down."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:303:81: C: Line is too long. [88/80]
+    Talks.say "Okay stop RubyAI. You are doing way too much. Turn the turn up way down."
+                                                                                ^^^^^^^^
+data.rb:305:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "You get it together and finish this flow about Culture."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:307:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Okay. I got a little excited there. Maybe a little carried away."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:308:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Either way, we should think about those for a moment while I find the perfect song to gracefully end this exploration."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:308:81: C: Line is too long. [134/80]
+    Talks.say "Either way, we should think about those for a moment while I find the perfect song to gracefully end this exploration."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:310:81: C: Line is too long. [140/80]
+    formatador.display_line('[yellow]Searching.........................................................................................[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:312:81: C: Line is too long. [140/80]
+    formatador.display_line('[yellow]Searching.........................................................................................[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:314:81: C: Line is too long. [140/80]
+    formatador.display_line('[yellow]Searching.........................................................................................[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:315:81: C: Line is too long. [139/80]
+    formatador.display_line('[green]*------------------------------------------------------------------------------------------------*[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:316:81: C: Line is too long. [139/80]
+    formatador.display_line('[green]*-----------------------------------------CHECK THE SOURCE CODE----------------------------------*[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:317:81: C: Line is too long. [139/80]
+    formatador.display_line('[green]*------------------------------------------------------------------------------------------------*[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:318:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "While RubyAI searches for Dead Prez, note that the source code of this program is more than just text printed to the screen. It includes a brief explanation of Classes, Methods, Strings, String Interpolation, Arrays, Hashes, Gems, and more.", voice: 'cellos'
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:318:81: C: Line is too long. [273/80]
+    Talks.say "While RubyAI searches for Dead Prez, note that the source code of this program is more than just text printed to the screen. It includes a brief explanation of Classes, Methods, Strings, String Interpolation, Arrays, Hashes, Gems, and more.", voice: 'cellos'
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:319:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Download The Source Code", voice: 'cellos'
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:320:81: C: Line is too long. [140/80]
+    formatador.display_line('[yellow]Searching.........................................................................................[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:322:81: C: Line is too long. [140/80]
+    formatador.display_line('[yellow]Searching.........................................................................................[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:326:81: C: Line is too long. [103/80]
+  #  binding.pry uncomment this to debug in the Terminal. It stops the code where you place binding.pry
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:328:3: C: Assignment Branch Condition size for intro_dead_prez is too high. [67.01/15]
+  def self.intro_dead_prez
+  ^^^
+data.rb:328:3: C: Method has too many lines. [38/10]
+  def self.intro_dead_prez
+  ^^^
+data.rb:341:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Ahh, here it is. Dead Prez. For the record, you can learn alot from Dead Prez. These five lessons have helped Grow get through many phases of life."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:341:81: C: Line is too long. [163/80]
+    Talks.say "Ahh, here it is. Dead Prez. For the record, you can learn alot from Dead Prez. These five lessons have helped Grow get through many phases of life."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:342:81: C: Line is too long. [119/80]
+    formatador.display_line('[yellow]In a song named "Discipline," from the Album "Lets Get Free!" Dead Prez said:[/]')
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:343:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("1. #{@@dead_prez_golden_hash[:of_discipline][:one]}")}
+                       ^
+data.rb:343:81: C: Line is too long. [102/80]
+    formatador.indent {formatador.display_line("1. #{@@dead_prez_golden_hash[:of_discipline][:one]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^
+data.rb:343:102: C: Space missing inside }.
+    formatador.indent {formatador.display_line("1. #{@@dead_prez_golden_hash[:of_discipline][:one]}")}
+                                                                                                     ^
+data.rb:344:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("2. #{@@dead_prez_golden_hash[:of_discipline][:two]}")}
+                       ^
+data.rb:344:81: C: Line is too long. [102/80]
+    formatador.indent {formatador.display_line("2. #{@@dead_prez_golden_hash[:of_discipline][:two]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^
+data.rb:344:102: C: Space missing inside }.
+    formatador.indent {formatador.display_line("2. #{@@dead_prez_golden_hash[:of_discipline][:two]}")}
+                                                                                                     ^
+data.rb:345:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("3. #{@@dead_prez_golden_hash[:of_discipline][:three]}")}
+                       ^
+data.rb:345:81: C: Line is too long. [104/80]
+    formatador.indent {formatador.display_line("3. #{@@dead_prez_golden_hash[:of_discipline][:three]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:345:104: C: Space missing inside }.
+    formatador.indent {formatador.display_line("3. #{@@dead_prez_golden_hash[:of_discipline][:three]}")}
+                                                                                                       ^
+data.rb:346:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("4. #{@@dead_prez_golden_hash[:of_discipline][:four]}")}
+                       ^
+data.rb:346:81: C: Line is too long. [103/80]
+    formatador.indent {formatador.display_line("4. #{@@dead_prez_golden_hash[:of_discipline][:four]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:346:103: C: Space missing inside }.
+    formatador.indent {formatador.display_line("4. #{@@dead_prez_golden_hash[:of_discipline][:four]}")}
+                                                                                                      ^
+data.rb:347:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("5. #{@@dead_prez_golden_hash[:of_discipline][:five]}")}
+                       ^
+data.rb:347:81: C: Line is too long. [103/80]
+    formatador.indent {formatador.display_line("5. #{@@dead_prez_golden_hash[:of_discipline][:five]}")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:347:103: C: Space missing inside }.
+    formatador.indent {formatador.display_line("5. #{@@dead_prez_golden_hash[:of_discipline][:five]}")}
+                                                                                                      ^
+data.rb:348:81: C: Line is too long. [370/80]
+    Talks.say "In a song named 'Discipline,' from the Album 'Lets Get Free!' Dead Prez said 1: #{@@dead_prez_golden_hash[:of_discipline][:one]} 2: #{@@dead_prez_golden_hash[:of_discipline][:two]} 3: #{@@dead_prez_golden_hash[:of_discipline][:three]} 4: #{@@dead_prez_golden_hash[:of_discipline][:four]} and naturally 5: #{@@dead_prez_golden_hash[:of_discipline][:five]}"
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:351:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Now, to that song about Discipline"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:353:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("Discipline makes things easier, organize your life")}
+                       ^
+data.rb:353:48: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    formatador.indent {formatador.display_line("Discipline makes things easier, organize your life")}
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:353:81: C: Line is too long. [101/80]
+    formatador.indent {formatador.display_line("Discipline makes things easier, organize your life")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^
+data.rb:353:101: C: Space missing inside }.
+    formatador.indent {formatador.display_line("Discipline makes things easier, organize your life")}
+                                                                                                    ^
+data.rb:354:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Discipline makes things easier, organize your life"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:355:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("Discipline makes things easier, organize your life")}
+                       ^
+data.rb:355:48: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    formatador.indent {formatador.display_line("Discipline makes things easier, organize your life")}
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:355:81: C: Line is too long. [101/80]
+    formatador.indent {formatador.display_line("Discipline makes things easier, organize your life")}
+                                                                                ^^^^^^^^^^^^^^^^^^^^^
+data.rb:355:101: C: Space missing inside }.
+    formatador.indent {formatador.display_line("Discipline makes things easier, organize your life")}
+                                                                                                    ^
+data.rb:356:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Discipline makes things easier, organize your life"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:357:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("Uh um, uh um, its gonna be alright")}
+                       ^
+data.rb:357:48: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    formatador.indent {formatador.display_line("Uh um, uh um, its gonna be alright")}
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:357:81: C: Line is too long. [85/80]
+    formatador.indent {formatador.display_line("Uh um, uh um, its gonna be alright")}
+                                                                                ^^^^^
+data.rb:357:85: C: Space missing inside }.
+    formatador.indent {formatador.display_line("Uh um, uh um, its gonna be alright")}
+                                                                                    ^
+data.rb:358:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Uh um, uh um, its gonna be alright"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:359:24: C: Space missing inside {.
+    formatador.indent {formatador.display_line("Uh um, uh um, its gonna be fine")}
+                       ^
+data.rb:359:48: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    formatador.indent {formatador.display_line("Uh um, uh um, its gonna be fine")}
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:359:81: C: Line is too long. [82/80]
+    formatador.indent {formatador.display_line("Uh um, uh um, its gonna be fine")}
+                                                                                ^^
+data.rb:359:82: C: Space missing inside }.
+    formatador.indent {formatador.display_line("Uh um, uh um, its gonna be fine")}
+                                                                                 ^
+data.rb:360:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Uh um, uh um, its gonna be fine"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:361:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Now, as we proceed to give you what you need"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:362:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Allow me to intervene with this page from Tïdowl. You push play, and just Listen."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:362:81: C: Line is too long. [97/80]
+    Talks.say "Allow me to intervene with this page from Tïdowl. You push play, and just Listen."
+                                                                                ^^^^^^^^^^^^^^^^^
+data.rb:365:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Thanks Flatiron School, from Grow and RubyAI"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:369:1: C: Extra blank line detected.
+data.rb:375:3: C: Assignment Branch Condition size for ruby_say_hello is too high. [19/15]
+  def self.ruby_say_hello
+  ^^^
+data.rb:375:3: C: Method has too many lines. [19/10]
+  def self.ruby_say_hello
+  ^^^
+data.rb:377:10: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    puts "Hello World. My name is RubyAI. I was designed to speak, to remember, to help programmers practice, to sing, to code mix, and code switch."
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:377:81: C: Line is too long. [149/80]
+    puts "Hello World. My name is RubyAI. I was designed to speak, to remember, to help programmers practice, to sing, to code mix, and code switch."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:378:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "Hello World. My name is RubyAI. I was designed to speak, to remember, to help programmers practice, to sing, to code mix, and code switch."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:378:81: C: Line is too long. [154/80]
+    Talks.say "Hello World. My name is RubyAI. I was designed to speak, to remember, to help programmers practice, to sing, to code mix, and code switch."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:380:10: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    puts "I am not human. However, I have been created to be likable. Maybe even lovable."
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:380:81: C: Line is too long. [90/80]
+    puts "I am not human. However, I have been created to be likable. Maybe even lovable."
+                                                                                ^^^^^^^^^^
+data.rb:381:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "I am not human. However, I have been created to be likeable. Maybe even loveable." # spelled incorrectly for proper pronunciation
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:381:81: C: Line is too long. [144/80]
+    Talks.say "I am not human. However, I have been created to be likeable. Maybe even loveable." # spelled incorrectly for proper pronunciation
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:383:10: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    puts "I was named in honor of the Ruby programming language."
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:384:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "I was named in honor of the Ruby programming language."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:386:10: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    puts "I was programmed by Grow. Grow is also known as Rolando Hernandez Rodriguez Brown. Son of Lorraine Brown, Rolando Hernandez and Eliana Rodriquez."
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:386:81: C: Line is too long. [156/80]
+    puts "I was programmed by Grow. Grow is also known as Rolando Hernandez Rodriguez Brown. Son of Lorraine Brown, Rolando Hernandez and Eliana Rodriquez."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:387:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "I was programmed by Grow. Grow is also known as Rolando Hernandez Rodriguez Brown. Son of Lorraine Brown, Rolando Hernandez and Eliana Rodriquez."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:387:81: C: Line is too long. [161/80]
+    Talks.say "I was programmed by Grow. Grow is also known as Rolando Hernandez Rodriguez Brown. Son of Lorraine Brown, Rolando Hernandez and Eliana Rodriquez."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:389:10: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    puts "In case it wasnt clear, Grow is Human."
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:390:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "In case it wasnt clear, Grow is Human."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:393:10: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    puts "We are here to explore Imagination, Programming, Culture, and of course Data."
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:393:81: C: Line is too long. [88/80]
+    puts "We are here to explore Imagination, Programming, Culture, and of course Data."
+                                                                                ^^^^^^^^
+data.rb:394:15: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    Talks.say "We are here to explore Imagination, Programming, Culture, and of course Data. We, humans and programs are realizing that culture is also data. More on that another time."
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:394:81: C: Line is too long. [185/80]
+    Talks.say "We are here to explore Imagination, Programming, Culture, and of course Data. We, humans and programs are realizing that culture is also data. More on that another time."
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+data.rb:396:1: C: Extra empty line detected at class body end.
+Gemfile:2:8: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+source "https://rubygems.org"
+       ^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:3:3: C: Missing space after #.
+  #This is me creating you as a program to help us remember very important concepts. Thank you for speaking to us.
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:3:81: C: Line is too long. [114/80]
+  #This is me creating you as a program to help us remember very important concepts. Thank you for speaking to us.
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:5:1: C: Extra blank line detected.
+sayhello.rb:8:3: C: Missing space after #.
+  #This loads another class named Data.
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:10:3: C: Indentation of first line in file detected.
+  require_relative 'data'
+  ^^^^^^^^^^^^^^^^
+sayhello.rb:14:81: C: Line is too long. [103/80]
+  # In object-oriented programming, a class is an extensible program-code-template for creating objects
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:15:3: C: Incorrect indentation detected (column 2 instead of 0).
+  # providing initial values for state (member variables) and implementations of behavior (member functions or methods).
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:15:81: C: Line is too long. [120/80]
+  # providing initial values for state (member variables) and implementations of behavior (member functions or methods).
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:17:1: C: Missing top-level class documentation comment.
+class CultureIs < Data
+^^^^^
+sayhello.rb:17:1: C: Inconsistent indentation detected.
+class CultureIs < Data
+^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:18:1: C: Extra empty line detected at class body beginning.
+sayhello.rb:23:60: C: Missing space after #.
+  Talks.say "For now. First things first. #{@@thanksmatz}" #Talks allows a description way of calling the say command.
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:23:81: C: Line is too long. [118/80]
+  Talks.say "For now. First things first. #{@@thanksmatz}" #Talks allows a description way of calling the say command.
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:24:45: C: Missing space after #.
+  Talks.say "MINASWAN means: #{@@minaswan}" #String interpolation
+                                            ^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:26:13: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+  Talks.say "Please."
+            ^^^^^^^^^
+sayhello.rb:27:13: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+  Talks.say "Remember this motto."
+            ^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:29:13: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+  Talks.say "Matz made programming easier for humans. Maybe you can make something easier for someone else. Its a great way to live." #Just a string
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:29:81: C: Line is too long. [148/80]
+  Talks.say "Matz made programming easier for humans. Maybe you can make something easier for someone else. Its a great way to live." #Just a string
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:29:135: C: Missing space after #.
+  Talks.say "Matz made programming easier for humans. Maybe you can make something easier for someone else. Its a great way to live." #Just a string
+                                                                                                                                      ^^^^^^^^^^^^^^
+sayhello.rb:31:13: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+  Talks.say "Ok, let us explore Imagination."
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sayhello.rb:45:81: C: Line is too long. [106/80]
+  # Here, I nest everything in class methods from the Data class. It keeps the code clean and descriptive.

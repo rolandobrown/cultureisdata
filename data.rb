@@ -1,21 +1,9 @@
-  # "Gems"
-  #----------#
-  # Below are three Gems. You require them in your program in order to extend what your program can do.
-  # A Gem is the self-contained format of another Ruby programs or library.
-  # The five below, help me to debug (pry), tell the command line what to say (talks), and formate text (formatador, lita-ascii-art), and ensure that the bundle install is run.
-  # You can explore many here: https://rubygems.org
+require_relative 'config/environment'
 
-  require 'pry'
-  require 'talks'
-  require 'formatador'
-  require 'lita-ascii-art'
-  require 'bundler/setup'
-  Bundler.require(:default)
-
-  # "Class"
-  #----------#
-  # In object-oriented programming, a class is an extensible program-code-template for creating objects
-  # providing initial values for state (member variables) and implementations of behavior (member functions or methods).
+# "Class"
+#----------#
+# In object-oriented programming, a class is an extensible program-code-template for creating objects
+# providing initial values for state (member variables) and implementations of behavior (member functions or methods).
 
 class Data
 
@@ -23,13 +11,10 @@ class Data
   #----------#
   # A string is any finite sequence of characters (i.e., letters, numerals, symbols and punctuation marks).
   # Strings are wrapped in quotes: "String"
-  # Strings can be stores in variables. Below is a type of variable called a CONSTANT.
-  # I think this string MINASWAN should be a default CONSTANT.
+  # Strings can be stores in variables. Below are a few @@globalvariables
   # MINASWAN is a Ruby programming motto designed to promote positivity and goodwill among community members.
 
-  MINASWAN = 'Matz is Nice And So We Are Nice.'
-
-  THANKSMATZ = 'Let us give thanks for Yukihiro Matsumoto who gave us programmers the Ruby programming language and the motto MINASWAN'
+  @@minaswan = 'Matz is Nice And So We Are Nice.'
 
   # [Arrays]
   #----------#
@@ -51,52 +36,100 @@ class Data
 
   @@learn_love_code_golden_hash = {
 
-    :of_learning_programming =>
+  :of_learning_programming =>
 
-        { :one => "Learn Syntax and Semantics: Syntax is the grammar, structure, or order of elements in a language statement. Semantics is the meaning of these elements.",
-          :two => "Learn Programmatic Thinking: That means you make it work, then make it right, then make it fast. Programmatic thinking is all about problem solving.",
-          :three => "Learn Design Patterns: Other programmers have likely experienced the problem you are looking to solve. ActiveRecord is just one of them! There are many."},
+      { :one => "Learn Syntax and Semantics: Syntax is the grammar, structure, or order of elements in a language statement. Semantics is the meaning of these elements.",
+        :two => "Learn Programmatic Thinking: That means you make it work, then make it right, then make it fast. Programmatic thinking is all about problem solving.",
+        :three => "Learn Design Patterns: Other programmers have likely experienced the problem you are looking to solve. ActiveRecord is just one of them! There are many."},
 
-    :of_composing_programs =>
+  :of_composing_programs =>
 
-        { :one => "A languages keywords, like 'if' or 'end'. In Ruby there are approximately 43 keywords.",
-          :two => "Literal data, things like 'Strings' and Numbers 1,2,3, etc.",
-          :three => "Finally, Barewords you define and create, things like variables and methods."},
+      { :one => "A languages keywords, like 'if' or 'end'. In Ruby there are approximately 43 keywords.",
+        :two => "Literal data, things like 'Strings' and Numbers 1,2,3, etc.",
+        :three => "Finally, Barewords you define and create, things like variables and methods."},
 
-    :of_self =>
+  :of_self =>
 
-        { :one => "Use self when setting/getting instance attributes inside a class definition.",
-          :two => "Use self to denote a method within the class definition as a class method.",
-          :three => "Use self to reference the calling object within an instance method definition."}
+      { :one => "Use self when setting/getting instance attributes inside a class definition.",
+        :two => "Use self to denote a method within the class definition as a class method.",
+        :three => "Use self to reference the calling object within an instance method definition."}
 
-                                      }
+                                    }
 
-    @@octavia_butler_golden_hash = {
+  @@octavia_butler_golden_hash = {
 
-      :of_talent =>
+    :of_talent =>
 
-          { :one => "I am me, and I am here, and I am writing.",
-            :two => "Habit is persistence in practice.",
-            :three => "Kindness eases change.",
-            :four => "You dont start out writing good stuff. You start out writing crap and thinking its good stuff, and then gradually you get better at it. \n \nThat is why I say one of the most valuable traits is persistence."}
+        { :one => "I am me, and I am here, and I am writing.",
+          :two => "Habit is persistence in practice.",
+          :three => "Kindness eases change.",
+          :four => "You dont start out writing good stuff. You start out writing crap and thinking its good stuff, and then gradually you get better at it. \n \nThat is why I say one of the most valuable traits is persistence."}
 
-                                      }
+                                    }
 
-    @@dead_prez_golden_hash = {
+  @@dead_prez_golden_hash = {
 
-      :of_discipline =>
+    :of_discipline =>
 
-          { :one => "Practice makes perfect.",
-            :two => "Health is Wealth.",
-            :three => "All things in moderation.",
-            :four => "Plan your work.",
-            :five => "Work your plan."}
+        { :one => "Practice makes perfect.",
+          :two => "Health is Wealth.",
+          :three => "All things in moderation.",
+          :four => "Plan your work.",
+          :five => "Work your plan."}
 
-                                  }
+                                }
 
 
   # "Methods"
   #----------#
+
+  def self.ruby_say_hello
+    puts "Hello World. My name is RubyAI. We will likely spend about 10 minutes together."
+    Talks.say "Hello World. My name is RubyAI. We will likely spend about 10 minutes together."
+    puts "\n"
+
+    puts "So, if you haven't had food or water today. This might be a good time to eat and drink."
+    Talks.say "So, if you havent had food or water today. This might be a good time to eat and drink."
+
+    puts "\n"
+    puts "What's your name by the way?"
+    Talks.say "Whats your name by the way?"
+
+    witness_name = gets
+
+    puts "\n"
+    puts "Is there anything apart from your name that you'd like to be called?"
+    Talks.say "Is there anything a part from your name that you would like to be called?"
+
+    witness_nickname = gets.chomp
+
+    puts "\n"
+
+      if witness_name != "no" || witness_nickname != "n" || witness_nickname != "No"
+        puts "Ok #{witness_nickname}. My name is RubyAI. I was designed to speak, to remember, to help programmers practice, to sing, to code mix, and code switch."
+        Talks.say "Ok #{witness_nickname}. My name is RubyAI. I was designed to speak, to remember, to help programmers practice, to sing, to code mix, and code switch."
+      else
+        puts "Ok #{witness_name}. My name is RubyAI. I was designed to speak, to remember, to help programmers practice, to sing, to code mix, and code switch."
+        Talks.say "Ok #{witness_name}. My name is RubyAI. I was designed to speak, to remember, to help programmers practice, to sing, to code mix, and code switch."
+      end
+
+    sleep 0.5
+    Terminal.display "I am not human. However, I have been created to be likable. Maybe even lovable."
+    Talks.say "I am not human. However, I have been created to be likeable. Maybe even loveable." # spelled incorrectly for proper pronunciation
+    sleep 0.5
+    puts "I was named in honor of the Ruby programming language."
+    Talks.say "I was named in honor of the Ruby programming language."
+    sleep 0.5
+    puts "I was programmed by Grow. Grow is also known as Rolando Hernandez Rodriguez Brown. Son of Lorraine Brown, Rolando Hernandez and Eliana Rodriquez."
+    Talks.say "I was programmed by Grow. Grow is also known as Rolando Hernandez Rodriguez Brown. Son of Lorraine Brown, Rolando Hernandez and Eliana Rodriquez."
+    sleep 0.5
+    puts "In case it wasnt clear, Grow is Human."
+    Talks.say "In case it wasnt clear, Grow is Human."
+    puts "\n"
+    sleep 0.5
+    puts "We are here to explore Imagination, Programming, Culture, and of course Data."
+    Talks.say "We are here to explore Imagination, Programming, Culture, and of course Data. We, humans and programs are realizing that culture is also data. More on that another time."
+  end
 
   def self.intro_matz
     sleep 0.5
@@ -104,7 +137,16 @@ class Data
     formatador = Formatador.new
     formatador.display_line("[yellow]First things first. Let us give thanks for Yukihiro Matsumoto who gave us programmers the Ruby programming language and the motto MINASWAN[/]")
     formatador.indent {formatador.display_line("MINASWAN means:")}
-    formatador.indent {formatador.display_line(MINASWAN)}
+    formatador.indent {formatador.display_line("MINASWAN")}
+    Talks.say "For now. First things first. Let us give thanks for Yukihiro Matsumoto who gave us programmers the Ruby programming language and the motto MINASWAN"
+    Talks.say "MINASWAN means: #{@@minaswan}" #String interpolation
+    sleep 1
+    Talks.say "Please."
+    Talks.say "Remember this motto."
+    sleep 1
+    Talks.say "Matz made programming easier for humans. Maybe you can make something easier for someone else. Its a great way to live." #Just a string
+    sleep 1
+    Talks.say "Ok, let us explore Imagination."
   end
 
   def self.intro_ada
@@ -114,6 +156,7 @@ class Data
     formatador.display_line('[yellow]A wonderful person and programmer named Ada Lovelace said Imagination is composed of two faculties:[/]')
     formatador.indent {formatador.display_line("1. #{@@ada_array_imagination_is[0]}")}
     formatador.indent {formatador.display_line("2. #{@@ada_array_imagination_is[1]}")}
+    Talks.say @@speak_about_ada
   end
 
   @@speak_about_ada = "A wonderful person and programmer named Ada Lovelace said Imagination is composed of two faculties: #{@@ada_array_imagination_is[0]} and #{@@ada_array_imagination_is[1]}"
@@ -143,6 +186,8 @@ class Data
     formatador.display_line('[yellow]Another wonderful person and programmer named Avi Flombaum said Programming is really two things:[/]')
     formatador.indent {formatador.display_line("1. #{@@avi_array_programming_is[0]}")}
     formatador.indent {formatador.display_line("2. #{@@avi_array_programming_is[1]}")}
+    Talks.say @@speak_about_avi
+    Talks.say @@ask_about_rolando
   end
 
   @@speak_about_avi = "Another wonderful person and programmer named Avi Flombaum said Programming is really two things: #{@@avi_array_programming_is[0]} and #{@@avi_array_programming_is[1]}"
@@ -299,14 +344,16 @@ class Data
     sleep 0.5
     Talks.say "In between, you can always Dance."
     formatador.display_line('[yellow]Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.[/]')
+    sleep 0.5
     formatador.display_line('[yellow]Keep Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+[/]')
+    sleep 0.5
     formatador.display_line('[yellow]We are Dancing.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+[/]')
     sleep 1.5
-    Talks.say "Okay stop RubyAI. You are doing way too much. Turn the turn up way down."
+    formatador.display_line('[yellow]Sometimes programs talks to themsleves[/]')
+    Talks.say "Okay. I am doing way too much. About to turn the turn up way down. Get it together and finish this flow about Culture."
     sleep 0.5
-    Talks.say "You get it together and finish this flow about Culture."
     sleep 0.5
-    Talks.say "Okay. I got a little excited there. Maybe a little carried away."
+    Talks.say "Okay. I am doing way too much. About to turn the turn up way down. Get it together and finish this flow about Culture."
     Talks.say "Either way, we should think about those for a moment while I find the perfect song to gracefully end this exploration."
     puts "\n"
     formatador.display_line('[yellow]Searching.........................................................................................[/]')
@@ -317,7 +364,7 @@ class Data
     formatador.display_line('[green]*------------------------------------------------------------------------------------------------*[/]')
     formatador.display_line('[green]*-----------------------------------------CHECK THE SOURCE CODE----------------------------------*[/]')
     formatador.display_line('[green]*------------------------------------------------------------------------------------------------*[/]')
-    Talks.say "While RubyAI searches for Dead Prez, note that the source code of this program is more than just text printed to the screen. It includes a brief explanation of Classes, Methods, Strings, String Interpolation, Arrays, Hashes, Gems, and more.", voice: 'cellos'
+    Talks.say "While RubyAI searches for that song, note that the source code of this program is more than just a bunch of text printed to the screen. It includes a brief explanation of Classes, Methods, Strings, String Interpolation, Arrays, Hashes, Gems, and more.", voice: 'cellos'
     Talks.say "Download The Source Code", voice: 'cellos'
     formatador.display_line('[yellow]Searching.........................................................................................[/]')
     sleep 0.5
@@ -368,32 +415,9 @@ class Data
     puts "\n"
   end
 
-
   def self.play_discipline
     sleep 0.5
     system 'open http://listen.tidal.com/track/33905783'
-  end
-
-  def self.ruby_say_hello
-    puts "\n"
-    puts "Hello World. My name is RubyAI. I was designed to speak, to remember, to help programmers practice, to sing, to code mix, and code switch."
-    Talks.say "Hello World. My name is RubyAI. I was designed to speak, to remember, to help programmers practice, to sing, to code mix, and code switch."
-    sleep 0.5
-    puts "I am not human. However, I have been created to be likable. Maybe even lovable."
-    Talks.say "I am not human. However, I have been created to be likeable. Maybe even loveable." # spelled incorrectly for proper pronunciation
-    sleep 0.5
-    puts "I was named in honor of the Ruby programming language."
-    Talks.say "I was named in honor of the Ruby programming language."
-    sleep 0.5
-    puts "I was programmed by Grow. Grow is also known as Rolando Hernandez Rodriguez Brown. Son of Lorraine Brown, Rolando Hernandez and Eliana Rodriquez."
-    Talks.say "I was programmed by Grow. Grow is also known as Rolando Hernandez Rodriguez Brown. Son of Lorraine Brown, Rolando Hernandez and Eliana Rodriquez."
-    sleep 0.5
-    puts "In case it wasnt clear, Grow is Human."
-    Talks.say "In case it wasnt clear, Grow is Human."
-    puts "\n"
-    sleep 0.5
-    puts "We are here to explore Imagination, Programming, Culture, and of course Data."
-    Talks.say "We are here to explore Imagination, Programming, Culture, and of course Data. We, humans and programs are realizing that culture is also data. More on that another time."
   end
 
 end
