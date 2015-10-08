@@ -2,4 +2,6 @@
 
 require_relative 'config/environment.rb'
 
+Think.clear_screen
+
 RubySpeaks.new

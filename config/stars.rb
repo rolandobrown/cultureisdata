@@ -19,7 +19,4 @@ require 'lita-ascii-art'
 # We write and require these small programs as a way to practice creating Model–view–controller (MVC)
 require_relative '../lib/parable.rb' #view
 require_relative '../lib/octavia.rb' #view
-require_relative '../lib/data.rb' #model
-require_relative '../lib/sayhello.rb' #view
 require_relative '../lib/concerns/think' #controller
-require_relative '../lib/concerns/listen' #controller

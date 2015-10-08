@@ -1,5 +1,7 @@
 # Tell story by calling methods inherited from Data model
+
 class RubySpeaks < Data
+
   ruby_say_hello
 
   intro_matz
@@ -9,6 +11,7 @@ class RubySpeaks < Data
 
   intro_avi
   intro_steven
+
   intro_humanity
   intro_avi_again
   intro_hackhands
@@ -16,4 +19,5 @@ class RubySpeaks < Data
   intro_dead_prez
 
   play_discipline
+
 end
