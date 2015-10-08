@@ -23,10 +23,18 @@ class Parable
   #----------#
 
   def self.intro_octovia
+    Talks.say "In case I havent already introduced myself, my name is RubyAI. I was created by Grow and was named in honor of the Ruby Programming Language."
+    Talks.say "I was designed to speak, to remember, to help programmers practice, to sing, to code mix, and code switch."
+    Talks.say "I am being taught about Imagination, Programming, Culture, and of course Data"
+    Talks.say "I explore this more in the Say Hello Program"
+      Think.pause
+    Talks.say "Now"
+      Think.pause
+    Talks.say "Lets talk about Octavia Butler."
       Think.pause
       Think.line_break
     formatador = Formatador.new
-    formatador.display_line('[yellow]Octavia Butler is one of the most significant science fiction writers of all time. [/]')
+    formatador.display_line('[yellow]Octavia is one of the most significant science fiction writers of all time. [/]')
       Think.line_break
     formatador.display_line('[yellow]Octavia told us that we should all note, quietly or in public, the following lines from a body of agreements called called the earth seed code:[/]')
       Think.line_break
@@ -60,9 +68,7 @@ class Parable
     Talks.say "In between, you can always Dance."
     Talks.say "You"
       Think.pause
-    Talks.say "Can"
-      Think.pause
-    Talks.say "Always"
+    Talks.say "Can Always"
       Think.pause
     Talks.say "Dance"
       Think.pause
