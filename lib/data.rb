@@ -1,5 +1,3 @@
-require_relative 'config/environment'
-
 # "Class"
 #----------#
 # In object-oriented programming, a class is an extensible program-code-template for creating objects
@@ -84,6 +82,8 @@ class Data
   #----------#
 
   def self.ruby_say_hello
+
+
     puts "Hello World. My name is RubyAI. We will likely spend about 10 minutes together."
     Talks.say "Hello World. My name is RubyAI. We will likely spend about 10 minutes together."
     puts "\n"
@@ -92,8 +92,8 @@ class Data
     Talks.say "So, if you havent had food or water today. This might be a good time to eat and drink."
 
     puts "\n"
-    puts "What's your name by the way?"
-    Talks.say "Whats your name by the way?"
+    puts "By the way, what's your name?"
+    Talks.say "By the way, whats your name?"
 
     witness_name = gets
 
@@ -114,7 +114,7 @@ class Data
       end
 
     sleep 0.5
-    Terminal.display "I am not human. However, I have been created to be likable. Maybe even lovable."
+    puts "I am not human. However, I have been created to be likable. Maybe even lovable."
     Talks.say "I am not human. However, I have been created to be likeable. Maybe even loveable." # spelled incorrectly for proper pronunciation
     sleep 0.5
     puts "I was named in honor of the Ruby programming language."

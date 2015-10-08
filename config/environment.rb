@@ -1,8 +1,8 @@
 # "Gems"
 #----------#
-# Below are three Gems we require in our program to extend what it can do.
-# A Gem is the self-contained format of another Ruby programs or library.
-# You can explore many here: https://rubygems.org
+# A Gem is the self-contained format of another Ruby program or library.
+# We use Gems to extend what our program can do.
+# Explore more: https://rubygems.org
 
 require 'bundler'
 Bundler.require(:default)
@@ -12,5 +12,9 @@ require 'talks'
 require 'formatador'
 require 'lita-ascii-art'
 
-require_relative './sayhello.rb'
-require_relative './data.rb'
+# "Files"
+#----------#
+# We write and require these small programs as a way to practice creating Model–view–controller (MVC)
+require_relative '../lib/data.rb' #model
+require_relative '../lib/controller.rb' #controller
+require_relative '../lib/sayhello.rb' #view

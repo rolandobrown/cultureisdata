@@ -1,0 +1,19 @@
+1. Write
+
+"Hello World. My name is RubyAI. We will likely spend about 10 minutes together."
+
+Talks.say "Hello World. My name is RubyAI. We will likely spend about 10 minutes together."
+puts "\n"
+
+puts "So, if you haven't had food or water today. This might be a good time to eat and drink."
+Talks.say "So, if you havent had food or water today. This might be a good time to eat and drink."
+
+puts "\n"
+puts "By the way, what's your name?"
+Talks.say "By the way, whats your name?"
+
+witness_name = gets
+
+puts "\n"
+puts "Is there anything apart from your name that you'd like to be called?"
+Talks.say "Is there anything a part from your name that you would like to be called?"

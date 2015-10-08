@@ -1,9 +1,5 @@
-require_relative 'config/environment'
-
+# Tell story by calling methods inherited from Data model
 class RubySpeaks < Data
-
-  # Run Methods from Data Class in order of story.
-
   ruby_say_hello
 
   intro_matz
@@ -20,5 +16,4 @@ class RubySpeaks < Data
   intro_dead_prez
 
   play_discipline
-
 end
